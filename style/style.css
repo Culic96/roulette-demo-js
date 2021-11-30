@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(./img/table.png);
+    background-size: cover;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #fff;
+}
+
+input {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+#hand{
+    font-size: 18px;
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px;
+    margin-top: 10px;
+}
+p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#main-msg {
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px;
+    border-radius: 5px 5px;
+    width: 360px;
+    height: 40px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-msg span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px;
+    border-radius: 5px 5px;
+    width: 100%;
+    height: 100%;
+}
+
+#main-msg .success {
+    background-color: lightgreen;
+    text-transform: uppercase;
+}
+
+#main-msg .info {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+#main-msg .error {
+    background-color: lightsalmon;
+}
+
+.btn {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+}
+
+.btn-white{
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+}
+
+.btn-green {
+    background-color: green;
+}
+
+.btn-black {
+    background-color: black;
+}
+
+.btn-red {
+    background-color: red;
+}
+
+.btn-main {
+    margin-top: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: gold;
+    color: black;
+    font-size: 15px;
+}
+
+.btn-main-disabled {
+    width: 100px;
+    height: 40px;
+    background-color: grey;
+    color: black;
+    font-size: 15px;
+}
+
+
+#roulette-table {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chip-counter {
+    background-color: white;
+    color: black;
+    border-radius: 25px 25px;
+    width: 15px;
+    height: 15px;
+    padding: 2px;
+    position: relative;
+    bottom: 40px;
+    left: 25px;
+}
+
+.btn-chip-num {
+    width: 100%;
+    height: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

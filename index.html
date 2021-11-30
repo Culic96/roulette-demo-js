@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/utils.css">
+    <title>Rulet_Demo</title>
+</head>
+<body class="disable-select">
+    <h1>Welcome to the roulette game!</h1>
+    <p id="main-msg"></p>
+    <input id="chips" type="number" min="0" oninput="validity.valid||(value='');">
+
+    <div id="roulette-table">
+        <div id="num-0"> 
+        </div>
+        <div class="btn">
+        </div>
+        <div>
+            <table id="rulet">
+                <tbody id="rulet-body">
+                    <tr>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+        <div>
+            <button id="show-box" class="btn btn-white"></button>
+        </div>
+
+    <button id="btn-startGame" class="btn-main" onclick="startGame()">Start Game</button>
+    <button id="btn-spinGame" class="btn-main btn-main-disabled" onclick="onBtnSpinClick()" disabled>Spin</button>
+    <p>Hand</p>
+    <p id="hand"></p>
+
+    <script src="./js/helpers.js"></script>
+    <script src="./js/messages.js"></script>
+    <script src="./js/roulette.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
