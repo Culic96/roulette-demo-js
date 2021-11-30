@@ -137,13 +137,10 @@ const NS_ROULETTE = 'ns_roulette';
         return numbersMap[fieldKey];
     }
     global.endGame = () => {
-
         for(let i=0; i<=36; i++) {
             const chipCounter = document.getElementById(`num-${i}`).getElementsByClassName("chip-counter")[0];
             chipCounter.innerText = '0';
+            numbersMap[`num-${i}`] = 0;
         }
-
-        const chipCounter = document.getElementById(`num-${i}`).getElementsByClassName("chip-counter")[0];
-        chipCounter.innerText = numbersMap[`num-${i}`];
     };
 })(Roulette);
