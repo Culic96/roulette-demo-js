@@ -23,11 +23,14 @@ const NS_ROULETTE = 'ns_roulette';
     let spinDuration = 1000;
     let hasGameStarted = false;
 
+
     function startGame() {
+        
         hasGameStarted = true;
     }
 
     function getHasGameStarted() { 
+        
         return hasGameStarted;
     }
 
@@ -43,7 +46,8 @@ const NS_ROULETTE = 'ns_roulette';
 
         if(!hasGameStarted) {
             Messages.setMessage("The game has not started yet!");
-            return;
+           
+            return  numbersMap[`num-${i}`] = 0;
         }
 
         Messages.setMessage("Click spin when you wish to test your luck", MessageType.INFO);
@@ -142,5 +146,6 @@ const NS_ROULETTE = 'ns_roulette';
             chipCounter.innerText = '0';
             numbersMap[`num-${i}`] = 0;
         }
+        hasGameStarted = false;
     };
 })(Roulette);
